@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-圣诞树（python）" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-红星闪闪" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/01/18/圣诞树（python）/" class="article-date">
-  <time datetime="2019-01-18T05:04:34.173Z" itemprop="datePublished">2019-01-18</time>
+    <a href="/2019/01/18/红星闪闪/" class="article-date">
+  <time datetime="2019-01-18T05:27:52.020Z" itemprop="datePublished">2019-01-18</time>
 </a>
     
   </div>
@@ -74,7 +74,268 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="圣诞树（python）"><a href="#圣诞树（python）" class="headerlink" title="圣诞树（python）"></a>圣诞树（python）</h1><p>标签（空格分隔）： 未分类</p>
+        <h1 id="红星闪闪"><a href="#红星闪闪" class="headerlink" title="红星闪闪"></a>红星闪闪</h1><p>标签（空格分隔）： 自编程序</p>
+<hr>
+<p>from random import random<br>from time import perf_counter<br>DARTS=1000<em>1000</em>100<br>hits=0.0<br>start=perf_counter()<br>for i in range(1,DARTS+1):<br>    x,y=random(),random()<br>    dist=pow(x<strong>2+y</strong>2,0.5)<br>    if dist&lt;=1.0:<br>        hits=hits+1<br>pi=4*(hits/DARTS)<br>print(“圆周率值是:{}”.format(pi))<br>print(“运行时间是:{:.5f}s”.format(perf_counter()-start))</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/红星闪闪/" data-id="cjr1ls96j0008sk0yldq7d84y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-判断字符个数" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/判断字符个数/" class="article-date">
+  <time datetime="2019-01-18T05:27:52.015Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="判断字符个数"><a href="#判断字符个数" class="headerlink" title="判断字符个数"></a>判断字符个数</h1><p>标签（空格分隔）： 自编程序</p>
+<hr>
+<p>s=input(“请输入一串字符：”)<br>letter=0<br>space=0<br>num=0<br>other=0<br>for i in s:<br>    if i&gt;=”a”and i&lt;=”z”:<br>        letter+=1<br>    elif i==” “:<br>        space+=1<br>    elif isinstance(i,int):<br>        num+=1<br>    else:<br>        other+=1<br>print(“字符串里有%d个字母,%d个空格，%d个数字，%d个其他字符”%(letter,space,num,other))</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/判断字符个数/" data-id="cjr1ls96d0002sk0ymfdtrz7v" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-工作日的力量" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/工作日的力量/" class="article-date">
+  <time datetime="2019-01-18T05:27:52.010Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="工作日的力量"><a href="#工作日的力量" class="headerlink" title="工作日的力量"></a>工作日的力量</h1><p>标签（空格分隔）：自编程序</p>
+<hr>
+<p>def dayUP(df):<br>    dayup=1<br>    for i in range(365):<br>        if i % 7 in[6,0]:<br>            dayup=dayup<em>(1-0.01)<br>        else:<br>            dayup=dayup</em>(1+df)<br>    return dayup<br>dayfactor=0.01<br>while dayUP(dayfactor)&lt;37.78:<br>    dayfactor+=0.001<br>print(“工作日的努力参数:{:.3f}.”.format(dayfactor))</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/工作日的力量/" data-id="cjr1ls96b0001sk0ysnl2tiae" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-列举三位数的水仙花数" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/列举三位数的水仙花数/" class="article-date">
+  <time datetime="2019-01-18T05:27:52.002Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="列举三位数的水仙花数"><a href="#列举三位数的水仙花数" class="headerlink" title="列举三位数的水仙花数"></a>列举三位数的水仙花数</h1><p>标签（空格分隔）： 自编程序</p>
+<hr>
+<p>for i in range(100,1000):<br>    a=eval(str(i)[0])<br>    b=eval(str(i)[1])<br>    c=eval(str(i)[2])<br>    if i==a<strong>3+b</strong>3+c**3:<br>        print(i)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/列举三位数的水仙花数/" data-id="cjr1ls96e0004sk0y4yo7f61f" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-暴力计算圆周率（蒙德卡洛方法）" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/暴力计算圆周率（蒙德卡洛方法）/" class="article-date">
+  <time datetime="2019-01-18T05:27:51.993Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="暴力计算圆周率（蒙德卡洛方法）"><a href="#暴力计算圆周率（蒙德卡洛方法）" class="headerlink" title="暴力计算圆周率（蒙德卡洛方法）"></a>暴力计算圆周率（蒙德卡洛方法）</h1><p>标签（空格分隔）： 自编程序</p>
+<hr>
+<p>from random import random<br>from time import perf_counter<br>DARTS=1000<em>1000</em>100<br>hits=0.0<br>start=perf_counter()<br>for i in range(1,DARTS+1):<br>    x,y=random(),random()<br>    dist=pow(x<strong>2+y</strong>2,0.5)<br>    if dist&lt;=1.0:<br>        hits=hits+1<br>pi=4*(hits/DARTS)<br>print(“圆周率值是:{}”.format(pi))<br>print(“运行时间是:{:.5f}s”.format(perf_counter()-start))</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/暴力计算圆周率（蒙德卡洛方法）/" data-id="cjr1ls96g0006sk0ywi7h5zgg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-狂蟒出洞" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/狂蟒出洞/" class="article-date">
+  <time datetime="2019-01-18T05:27:51.985Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="狂蟒出洞"><a href="#狂蟒出洞" class="headerlink" title="狂蟒出洞"></a>狂蟒出洞</h1><p>标签（空格分隔）：自编程序</p>
+<hr>
+<p>#PythonDraw.py<br>import turtle<br>turtle.setup(650,350,200,200)<br>turtle.penup()<br>turtle.fd(-250)<br>turtle.pendown()<br>turtle.pensize(25)<br>turtle.pencolor(“purple”)<br>turtle.seth(-40)<br>for i in range(4):<br>    turtle.circle(40, 80)<br>    turtle.circle(-40, 80)<br>turtle.circle(40, 80/2)<br>turtle.fd(40)<br>turtle.circle(16,180)<br>turtle.fd(40*2/3)<br>turtle.done()</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/狂蟒出洞/" data-id="cjr1ls96i0007sk0yvh1qqo5o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-列举100以内最靠近100的十个素数" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/列举100以内最靠近100的十个素数/" class="article-date">
+  <time datetime="2019-01-18T05:27:51.976Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="列举100以内最靠近100的十个素数"><a href="#列举100以内最靠近100的十个素数" class="headerlink" title="列举100以内最靠近100的十个素数"></a>列举100以内最靠近100的十个素数</h1><p>标签（空格分隔）： 自编程序</p>
+<hr>
+<p>n=100<br>c=0<br>while n&gt;0:<br>    flag=1<br>    for i in range(2,n):<br>        if n%i==0:<br>            flag=0<br>            break<br>    if flag==1:<br>        print(n,end=” “)<br>        c+=1<br>    n-=1<br>    if c==10:<br>        break</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/列举100以内最靠近100的十个素数/" data-id="cjr1ls9670000sk0ykh7cwbdt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-测定BMI" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/测定BMI/" class="article-date">
+  <time datetime="2019-01-18T05:27:51.967Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="测定BMI"><a href="#测定BMI" class="headerlink" title="测定BMI"></a>测定BMI</h1><p>标签（空格分隔）： 自编程序</p>
+<hr>
+<p>height,weight=eval(input(“请输入身高（米）和体重（公斤）【逗号隔开】：”))<br>bmi=weight/pow(height,2)<br>print(“BMI 数值为:{:.2f}”.format(bmi))<br>who,nat=””,””<br>if bmi&lt;18.5:<br>    who,nat=”偏瘦”,”偏瘦”<br>elif 18.5&lt;=bmi&lt;24:<br>    who,nat=”正常”,”正常”<br>elif 24&lt;=bmi&lt;25:<br>    who,nat=”正常”,”偏胖”<br>elif 25&lt;=bmi&lt;28:<br>    who,nat=”偏胖”,”偏胖”<br>elif 28&lt;=bmi&lt;30:<br>    who,nat=”偏胖”,”肥胖”<br>else:<br>    print(“输入错误”)<br>print(“BMI指标为:国内’{0}’,国际’{0}’”.format(who,nat))</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/测定BMI/" data-id="cjr1ls96e0003sk0yj3s92uxm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-文本进度条单行刷新（python）" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/文本进度条单行刷新（python）/" class="article-date">
+  <time datetime="2019-01-18T05:27:51.946Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="文本进度条单行刷新（python）"><a href="#文本进度条单行刷新（python）" class="headerlink" title="文本进度条单行刷新（python）"></a>文本进度条单行刷新（python）</h1><p>标签（空格分隔）： 自编程序</p>
+<hr>
+<p>#TextProBarV1.py<br>import time<br>for i in range(101):<br>    print(“\r{:3}%”.format(i),end=””)<br>    time.sleep(0.1)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/18/文本进度条单行刷新（python）/" data-id="cjr1ls96f0005sk0yeqio2l03" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-圣诞树（python）" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/18/圣诞树（python）/" class="article-date">
+  <time datetime="2019-01-18T05:27:51.936Z" itemprop="datePublished">2019-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="圣诞树（python）"><a href="#圣诞树（python）" class="headerlink" title="圣诞树（python）"></a>圣诞树（python）</h1><p>标签（空格分隔）： 自编程序</p>
 <p>—#Chrismas Tree.py<br>Chr=10<br>for i in range(Chr+1):<br>    a=”<em>“</em>i<em>2<br>    b=”.”</em>(Chr-i)<br>    c=”.”*(Chr-i)<br>    print(“{}&lt;-{}-&gt;{}”.format(c,a,b))<br>p=str(“          |  |           “)<br>print(p)<br>print(p)</p>
 
       
@@ -90,196 +351,12 @@
 
 
   
-    <article id="post-第一次搭建hexo博客复盘" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/05/第一次搭建hexo博客复盘/" class="article-date">
-  <time datetime="2019-01-05T08:49:33.696Z" itemprop="datePublished">2019-01-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一、安装node-js"><a href="#一、安装node-js" class="headerlink" title="一、安装node.js"></a>一、安装node.js</h1><ol>
-<li><p>去官网安装<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>，下好安装包正常操作即可。</p>
-</li>
-<li><p>打开cmd命令行，输入node -v和npm -v，出现下图证明成功。如果npm -v报错，很可能是没有一以管理员身份运行，电脑输入win+x选择管理员身份再次输入代码即可。<img src="/2019/01/05/第一次搭建hexo博客复盘/20190105141333713.png" alt="在这里插入图片描述"></p>
-<h1 id="二、安装git"><a href="#二、安装git" class="headerlink" title="二、安装git"></a>二、安装git</h1></li>
-</ol>
-<ol>
-<li>去官网安装<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener">git</a> ，下好安装包正常操作。<ol start="2">
-<li>右键点桌面出现 Git GUL Here 和Git Bash Here 两行命令及证明安装成功。<h1 id="三、安装hexo"><a href="#三、安装hexo" class="headerlink" title="三、安装hexo"></a>三、安装hexo</h1></li>
-<li>在认为合适的地方建一个文件夹，命名hexo（任意名字均可）</li>
-<li>打开cmd命令行，输入d:，再输入cd hexo进入你所创立的那个文件夹。</li>
-<li>输入npm install hexo -g，安装hexo npm install hexo -g，安装hexo。（注意，过程一定要联网）</li>
-<li>输入hexo -v查看安装是否成功。如果出现下图则表示成功。<img src="/2019/01/05/第一次搭建hexo博客复盘/2.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQxMDc0Mg==,size_16,color_FFFFFF,t_70" alt="hexo"></li>
-</ol>
-</li>
-</ol>
-<ol start="5">
-<li>如果出现报错。如下图，则是运行hexo所需要的环境变量没有配置好，配置环境变量即可。方法：我的电脑右击——属性——高级系统设置——环境变量——选择选择系统变量里边的path——新建变量——复制粘贴以下内容 C:\Users\用户\node_modules\hexo\bin 即可。（注意，用户是你自己的用户名那个文件夹）<img src="/2019/01/05/第一次搭建hexo博客复盘/3.png" alt="123"><h1 id="三、正式生成博客"><a href="#三、正式生成博客" class="headerlink" title="三、正式生成博客"></a>三、正式生成博客</h1></li>
-<li>输入 hexo init</li>
-<li>输入 npm install</li>
-<li>输入 hexo g</li>
-<li>输入 hexo s，hexo会为你自动生成一个网址如图。<img src="/2019/01/05/第一次搭建hexo博客复盘/4.jpg" alt="hexo s"></li>
-<li>Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README</li>
-<li>进入安装hexo的那个文件夹里面，点右键选择Git Bash Here，进入到如图页面<img src="/2019/01/05/第一次搭建hexo博客复盘/5.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQxMDc0Mg==,size_16,color_FFFFFF,t_70" alt="ddd"></li>
-</ol>
-<ol start="7">
-<li>输入 git config –global user.name “这里写你想给自己博客首页起的名字”。（注意空格）</li>
-<li>输入 git config –global user.email “在这里输入邮箱”</li>
-<li>输入cd ~/.ssh</li>
-<li>输入ssh-keygen -t rsa -C “步骤十二你输入的邮箱”。完成后连续三个回车，生成密钥。</li>
-<li>输入 eval”$(ssh-agent -s)”</li>
-<li>输入ssh-add ~/.ssh/id_rsa</li>
-<li>登陆Github，点击头像下的settings，找到 SSH and GPG keys 项目，点开，选择右上角的 New SSH key</li>
-<li>在 C:\users\Administrator.ssh 文件夹里找到 id_rsa.pub 的文件，用<strong>记事本的打开方式</strong>打开它 ，将内容复制起来。</li>
-<li>在网页内输入你的项目名 blog，在底下的大方框内粘贴上一步复制的内容。</li>
-<li>在第6步打开的界面内输入 ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，在底下的代码中发现 HI+你的用户名就证明成功了。</li>
-<li>在github网站上打开第五步你新建的项目，看到如图所示内容，点击方框右边将方框网址复制到剪贴板。（注意：右上角是 Use SSH）<img src="/2019/01/05/第一次搭建hexo博客复盘/6.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQxMDc0Mg==,size_16,color_FFFFFF,t_70" alt="git"></li>
-<li><p>在安装hexo的文件夹中，找到_config.yml 文件，<strong>用记事本方式打开</strong>在末尾将文件修改成以下格式<br><img src="/2019/01/05/第一次搭建hexo博客复盘/7.png" alt="dd">（注意：rep 那一行就是你复制的内容）</p>
-</li>
-<li><p>在cmd中输入 npm install hexo-deployer-git –save</p>
-</li>
-<li>输入hexo new post “你好，hexo”</li>
-<li>这时在文件夹 _posts 下已经能看到你创建的文件了</li>
-<li>使用命令 hexo d -g 将你的文章生成以及部署在你的网站上</li>
-<li>访问网站 http://用户名.github.io 就能看到你部署的文章了！</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/05/第一次搭建hexo博客复盘/" data-id="cjqj70xq700025k0y11ybvcce" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
 
-  
-    <article id="post-你好，hexo" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/01/你好，hexo/" class="article-date">
-  <time datetime="2019-01-01T15:17:10.000Z" itemprop="datePublished">2019-01-01</time>
-</a>
+  <nav id="page-nav">
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/01/你好，hexo/">你好，hexo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/01/你好，hexo/" data-id="cjqj70xq500015k0y0fiafgvu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-你好-hexo" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/01/你好-hexo/" class="article-date">
-  <time datetime="2019-01-01T14:56:16.000Z" itemprop="datePublished">2019-01-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/01/你好-hexo/">你好,hexo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/01/你好-hexo/" data-id="cjqj70xpz00005k0ytlerzc2g" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/01/hello-world/" class="article-date">
-  <time datetime="2019-01-01T14:20:14.613Z" itemprop="datePublished">2019-01-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/01/hello-world/" data-id="cjqj70xro00035k0yzpey6w5x" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -310,23 +387,23 @@
       <ul>
         
           <li>
-            <a href="/2019/01/18/圣诞树（python）/">(no title)</a>
+            <a href="/2019/01/18/红星闪闪/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/05/第一次搭建hexo博客复盘/">(no title)</a>
+            <a href="/2019/01/18/判断字符个数/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/01/你好，hexo/">你好，hexo</a>
+            <a href="/2019/01/18/工作日的力量/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/01/你好-hexo/">你好,hexo</a>
+            <a href="/2019/01/18/列举三位数的水仙花数/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2019/01/01/hello-world/">Hello World</a>
+            <a href="/2019/01/18/暴力计算圆周率（蒙德卡洛方法）/">(no title)</a>
           </li>
         
       </ul>
